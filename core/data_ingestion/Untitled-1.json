@@ -1,0 +1,307 @@
+{
+    "uploaded": "Description",
+    "suggested": "Description",
+    "output_field": "",
+    "input_field": "ProductSKUDescriptionSubmitted",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "OemItemNo",
+    "suggested": "OemItemNo",
+    "output_field": "",
+    "input_field": "ProductSKUSubmitted",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesWebNO",
+            "output_field": ""
+        },
+        {
+            "header": "SalesStoreNO",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryNO",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesStoreSE",
+    "suggested": "SalesStoreSE",
+    "output_field": "",
+    "input_field": "EndCustomerNameSubmitted",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesStoreNO",
+            "output_field": ""
+        },
+        {
+            "header": "SalesWebSE",
+            "output_field": ""
+        },
+        {
+            "header": "SalesTotal",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesWebSE",
+    "suggested": "SalesWebSE",
+    "output_field": "",
+    "input_field": "EndCustomerNameSubmitted",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesStoreSE",
+            "output_field": ""
+        },
+        {
+            "header": "SalesWebNO",
+            "output_field": ""
+        },
+        {
+            "header": "InventorySE",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "InventorySE",
+    "suggested": "InventorySE",
+    "output_field": "",
+    "input_field": "TotalQtyonHand",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "InventoryNO",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryTotal",
+            "output_field": ""
+        },
+        {
+            "header": "SalesStoreSE",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesStoreNO",
+    "suggested": "SalesStoreNO",
+    "output_field": "",
+    "input_field": "TotalWeeklyUnitsSold",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesStoreSE",
+            "output_field": ""
+        },
+        {
+            "header": "SalesWebNO",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryNO",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesWebNO",
+    "suggested": "SalesWebNO",
+    "output_field": "",
+    "input_field": "TotalWeeklyUnitsSold",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesStoreNO",
+            "output_field": ""
+        },
+        {
+            "header": "SalesWebSE",
+            "output_field": ""
+        },
+        {
+            "header": "OemItemNo",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesAVCTotal",
+    "suggested": "SalesAVCTotal",
+    "output_field": "",
+    "input_field": "TotalWeeklyUnitsSold",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesTotal",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryTotal",
+            "output_field": ""
+        },
+        {
+            "header": "SalesWebSE",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "InventoryNO",
+    "suggested": "InventoryNO",
+    "output_field": "",
+    "input_field": "EndCustomerNameSubmitted",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "InventorySE",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryTotal",
+            "output_field": ""
+        },
+        {
+            "header": "SalesStoreNO",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "SalesTotal",
+    "suggested": "SalesTotal",
+    "output_field": "",
+    "input_field": "TotalWeeklyUnitsSold",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "SalesAVCTotal",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryTotal",
+            "output_field": ""
+        },
+        {
+            "header": "SalesStoreSE",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+},
+{
+    "uploaded": "InventoryTotal",
+    "suggested": "InventoryTotal",
+    "output_field": "",
+    "input_field": "TotalQtyonHand",
+    "is_mandatory": True,
+    "isMandatory": True,
+    "confidence": 1,
+    "method": "exact",
+    "reason": "Exact match in partner mappings",
+    "alternatives": [
+        {
+            "header": "InventorySE",
+            "output_field": ""
+        },
+        {
+            "header": "InventoryNO",
+            "output_field": ""
+        },
+        {
+            "header": "SalesTotal",
+            "output_field": ""
+        }
+    ],
+    "breakdown": {
+        "exact": 1
+    },
+    "source": "direct"
+}
+]
