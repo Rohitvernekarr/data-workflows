@@ -1,11 +1,15 @@
 """Typed access to values in a caller-selected INI file."""
 
 import configparser
+import os
 from pathlib import Path
 from typing import Callable
 
 
-DEFAULT_CONFIG_PATH = Path(__file__).resolve().parents[2] / "verisure" / "config.ini"
+# PIPELINE_CONFIG_PATH may be absolute, or relative to the repo root (e.g. sonos/config.ini).
+DEFAULT_CONFIG_PATH = Path(__file__).resolve().parents[2] / (
+    os.environ.get("PIPELINE_CONFIG_PATH") or "sonos/config.ini"
+)
 
 
 class Config:

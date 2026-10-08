@@ -1,0 +1,8 @@
+prefect>=3
+imapclient
+psycopg2-binary
+paramiko
+openpyxl
+xlrd
+pandas
+requests

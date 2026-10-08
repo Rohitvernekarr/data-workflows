@@ -8,7 +8,7 @@ from typing import Optional
 
 @dataclass
 class PartnerConfig:
-    """Maps directly to columns in PartnerMaster."""
+    """One active partner feed: partner_master joined with partner_feed_sources."""
 
     # ── Partner identity ──────────────────────────────────────────────────────
     client_name: str
@@ -43,8 +43,9 @@ class PartnerConfig:
     pos_count_header: str
     inv_count_header: str
 
-    # ── Populated separately (not in BQ table) ────────────────────────────────
+    # ── Populated separately / optional ───────────────────────────────────────
     input_columns: list[str] = field(default_factory=list)
+    input_sheet_name: str = ""
 
 
 @dataclass
